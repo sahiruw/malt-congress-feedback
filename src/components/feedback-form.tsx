@@ -123,8 +123,7 @@ export default function FeedbackForm({ email }: FeedbackFormProps) {
               <Input
                 id="email"
                 type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={email || ""}
                 className="mt-1"
                 disabled
               />
